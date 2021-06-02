@@ -65,7 +65,7 @@ export const InfoCard = ({ restaurant = {} }) => {
     photos = [
       "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cmVzdGF1cmFudHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
     ],
-    address = "Random city random place random random",
+    vicinity = "Random city random place random random",
     isOpenNow = true,
     rating = 4.5,
     isClosedTemporarily = true,
@@ -103,7 +103,7 @@ export const InfoCard = ({ restaurant = {} }) => {
               />
             </SectionEnd>
           </Section>
-          <Address>{address}</Address>
+          <Address>{vicinity}</Address>
         </Info>
       </Card>
     </RestaurantCard>
