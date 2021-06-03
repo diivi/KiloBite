@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add @react-navigation/stack
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add react-native-webview@11.2.3
 
 PATH: 
   C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\welcome\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Intel\iCLS Client;C:\ProgramData\Oracle\Java\javapath;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Windows\System32\OpenSSH;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\PostgreSQL\12\bin;C:\Program Files\PostgreSQL\12\lib;C:\Users\welcome\AppData\Roaming\Python\Python37\Scripts;C:\HashiCorp\Vagrant\bin;C:\Program Files\Dart\dart-sdk\bin;C:\Program Files (x86)\AOMEI Backupper;C:\Program Files (x86)\GnuPG\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Calibre2;C:\Program Files\nodejs;C:\RailsInstaller\Ruby2.3.3\bin;C:\Users\welcome\.cargo\bin;C:\Users\welcome\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Users\welcome\AppData\Local\Programs\Python\Python37-32;C:\Users\welcome\AppData\Local\Microsoft\WindowsApps;C:\ProgramData\welcome\atom\bin;C:\Users\welcome\AppData\Local\atom\bin;?C;C:\Program Files\Git\Program Files\PostgreSQL\12\bin;?C;C:\Program Files\Git\Program Files\PostgreSQL\12\lib;C:\Users\welcome\Documents\flutter_windows_1.17.5-stable\flutter\bin;C:\Program Files\sqlite-tools-win32-x86-3310100;C:\Program Files\JetBrains\PyCharm Community Edition 2019.3.4\bin;C:\Program Files\Java\jdk-14.0.1;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\heroku\bin;C:\Program Files\IBM\Cloud\bin;G:\CLI\mongodb-win32-x86_64-2012plus-4.2.7\bin;G:\CLI\ffmpeg-4.2.3-win64-static\bin;G:\CLI;C:\Program Files\MongoDB\Server\4.2\bin;C:\Users\welcome\AppData\Local\Microsoft\WindowsApps;C:\Users\welcome\AppData\Local\GitHubDesktop\bin;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin;C:\Gradle\gradle-5.4.1\bin;C:\src\flutter\bin;C:\Program Files (x86)\7-Zip;C:\Users\welcome\AppData\Local\nvs\default;C:\Users\welcome\AppData\Local\nvs;C:\Users\welcome\AppData\Roaming\npm;C:\Users\welcome\bin\win-sudo\s
@@ -33,6 +33,7 @@ npm manifest:
       "@react-native-community/masked-view": "0.1.10",
       "@react-navigation/bottom-tabs": "^5.11.11",
       "@react-navigation/native": "^5.9.4",
+      "@react-navigation/stack": "^5.14.5",
       "camelize": "^1.0.0",
       "expo": "~41.0.1",
       "expo-font": "~9.1.0",
@@ -42,6 +43,7 @@ npm manifest:
       "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
       "react-native-gesture-handler": "~1.10.2",
       "react-native-get-random-values": "^1.7.0",
+      "react-native-maps": "0.27.1",
       "react-native-paper": "^4.9.1",
       "react-native-reanimated": "~2.1.0",
       "react-native-safe-area-context": "3.2.0",
@@ -1954,6 +1956,14 @@ Lockfile:
     integrity sha512-BxNSMLHpU+oS37Xok0ql6rc9U7IC8aUD4+U5ZPbjDJ0pwzZxGGh0YOEBzfV4k/Ig3cbPdvVWbc1C9HHbCVr2oQ==
     dependencies:
       nanoid "^3.1.15"
+  
+  "@react-navigation/stack@^5.14.5":
+    version "5.14.5"
+    resolved "https://registry.yarnpkg.com/@react-navigation/stack/-/stack-5.14.5.tgz#dc615cd7d270ba79e3330dcb50c2819d0e1f3850"
+    integrity sha512-hpdn1SS0tc3/3atkV2Q2y++n5B4e0rUcCj4W43PODMu72yX2m0LkKAAcpkPDCWAvwnLLIoLAEl5BEifZigl/6A==
+    dependencies:
+      color "^3.1.3"
+      react-native-iphone-x-helper "^1.3.0"
   
   "@types/hammerjs@^2.0.36":
     version "2.0.39"
@@ -5421,6 +5431,11 @@ Lockfile:
     version "1.3.1"
     resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz#20c603e9a0e765fd6f97396638bdeb0e5a60b010"
     integrity sha512-HOf0jzRnq2/aFUcdCJ9w9JGzN3gdEg0zFE4FyYlp4jtidqU03D5X7ZegGKfT1EWteR0gPBGp9ye5T5FvSWi9Yg==
+  
+  react-native-maps@0.27.1:
+    version "0.27.1"
+    resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.27.1.tgz#2f10cd417bb2fd938c9e015b1c9b6d9b1a44b97f"
+    integrity sha512-HygBkZBecTnIVRYrSiLRAvu4OmXOYso/A7c6Cy73HkOh9CgGV8Ap5eBea24tvmFGptjj5Hg8AJ94/YbmWK1Okw==
   
   react-native-paper@^4.9.1:
     version "4.9.1"
