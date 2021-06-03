@@ -22,12 +22,13 @@ export const Address = styled.Text`
 
 export const Info = styled.View`
   padding: ${(props) => props.theme.space[3]};
+  padding-top: ${(props) => props.theme.space[0]};
 `;
 
 export const Rating = styled.View`
   flex-direction: row;
   padding-top: ${(props) => props.theme.space[2]};
-  padding-bottom: ${(props) => props.theme.space[2]};
+  padding-bottom: ${(props) => props.theme.space[1]};
 `;
 
 export const Section = styled.View`
