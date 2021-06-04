@@ -19,7 +19,9 @@ const hint = (theme) => `
 
 const error = (theme) => `
     color: ${theme.colors.text.error};
-`;
+    font-size:10px;
+    padding-top:2px
+    `;
 
 const caption = (theme) => `
     font-size: ${theme.fontSizes.caption};

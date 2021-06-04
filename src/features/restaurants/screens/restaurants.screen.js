@@ -20,10 +20,10 @@ const RestaurantList = styled(FlatList).attrs({
 })``;
 
 const Loading = styled(ActivityIndicator)`
-  margin-left: -30px;
+  margin-left: -35px;
 `;
 const LoadingText = styled(Text)`
-  margin-left: -30px;
+  margin-left: -35px;
   margin-top: 25px;
   font-size: 18px;
 `;

@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add react-native-webview@11.2.3
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add firebase@8.2.3
 
 PATH: 
   C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\welcome\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Intel\iCLS Client;C:\ProgramData\Oracle\Java\javapath;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Windows\System32\OpenSSH;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\PostgreSQL\12\bin;C:\Program Files\PostgreSQL\12\lib;C:\Users\welcome\AppData\Roaming\Python\Python37\Scripts;C:\HashiCorp\Vagrant\bin;C:\Program Files\Dart\dart-sdk\bin;C:\Program Files (x86)\AOMEI Backupper;C:\Program Files (x86)\GnuPG\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Calibre2;C:\Program Files\nodejs;C:\RailsInstaller\Ruby2.3.3\bin;C:\Users\welcome\.cargo\bin;C:\Users\welcome\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Users\welcome\AppData\Local\Programs\Python\Python37-32;C:\Users\welcome\AppData\Local\Microsoft\WindowsApps;C:\ProgramData\welcome\atom\bin;C:\Users\welcome\AppData\Local\atom\bin;?C;C:\Program Files\Git\Program Files\PostgreSQL\12\bin;?C;C:\Program Files\Git\Program Files\PostgreSQL\12\lib;C:\Users\welcome\Documents\flutter_windows_1.17.5-stable\flutter\bin;C:\Program Files\sqlite-tools-win32-x86-3310100;C:\Program Files\JetBrains\PyCharm Community Edition 2019.3.4\bin;C:\Program Files\Java\jdk-14.0.1;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\heroku\bin;C:\Program Files\IBM\Cloud\bin;G:\CLI\mongodb-win32-x86_64-2012plus-4.2.7\bin;G:\CLI\ffmpeg-4.2.3-win64-static\bin;G:\CLI;C:\Program Files\MongoDB\Server\4.2\bin;C:\Users\welcome\AppData\Local\Microsoft\WindowsApps;C:\Users\welcome\AppData\Local\GitHubDesktop\bin;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin;C:\Gradle\gradle-5.4.1\bin;C:\src\flutter\bin;C:\Program Files (x86)\7-Zip;C:\Users\welcome\AppData\Local\nvs\default;C:\Users\welcome\AppData\Local\nvs;C:\Users\welcome\AppData\Roaming\npm;C:\Users\welcome\bin\win-sudo\s
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'C:\Users\welcome\Desktop\KiloBite\node_modules\@babel\generator\node_modules\.bin'
+  Error: EPERM: operation not permitted, unlink 'C:\Users\welcome\Desktop\KiloBite\node_modules\@babel\helper-compilation-targets\node_modules\.bin'
 
 npm manifest: 
   {
@@ -30,6 +30,7 @@ npm manifest:
     "dependencies": {
       "@expo-google-fonts/lato": "^0.1.0",
       "@expo-google-fonts/oswald": "^0.1.0",
+      "@react-native-async-storage/async-storage": "^1.13.0",
       "@react-native-community/masked-view": "0.1.10",
       "@react-navigation/bottom-tabs": "^5.11.11",
       "@react-navigation/native": "^5.9.4",
@@ -50,6 +51,7 @@ npm manifest:
       "react-native-screens": "~3.0.0",
       "react-native-svg": "12.1.0",
       "react-native-web": "~0.13.12",
+      "react-native-webview": "11.2.3",
       "styled-components": "^5.3.0",
       "uuid": "^8.3.2"
     },
@@ -1797,6 +1799,13 @@ Lockfile:
       "@babel/runtime" "^7.7.2"
       regenerator-runtime "^0.13.3"
   
+  "@react-native-async-storage/async-storage@^1.13.0":
+    version "1.15.5"
+    resolved "https://registry.yarnpkg.com/@react-native-async-storage/async-storage/-/async-storage-1.15.5.tgz#0d221a5ef1cd7a6494a42fcaad43136d68379afb"
+    integrity sha512-4AYehLH39B9a8UXCMf3ieOK+G61wGMP72ikx6/XSMA0DUnvx0PgaeaT2Wyt06kTrDTy8edewKnbrbeqwaM50TQ==
+    dependencies:
+      deep-assign "^3.0.0"
+  
   "@react-native-community/cli-debugger-ui@^4.13.1":
     version "4.13.1"
     resolved "https://registry.yarnpkg.com/@react-native-community/cli-debugger-ui/-/cli-debugger-ui-4.13.1.tgz#07de6d4dab80ec49231de1f1fbf658b4ad39b32c"
@@ -3190,15 +3199,15 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
     integrity sha1-Aljq5NPQwJdN4cFpGI7wBR0dGYg=
   
+  escape-string-regexp@2.0.0, escape-string-regexp@^2.0.0:
+    version "2.0.0"
+    resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-2.0.0.tgz#a30304e99daa32e23b2fd20f51babd07cffca344"
+    integrity sha512-UpzcLCXolUWcNu5HtVMHYdXJjArjsF9C0aNnquZYY4uW/Vu0miy5YoWvbV345HauVvcAUnpRuhMMcqTcGOY2+w==
+  
   escape-string-regexp@^1.0.5:
     version "1.0.5"
     resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
     integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
-  
-  escape-string-regexp@^2.0.0:
-    version "2.0.0"
-    resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-2.0.0.tgz#a30304e99daa32e23b2fd20f51babd07cffca344"
-    integrity sha512-UpzcLCXolUWcNu5HtVMHYdXJjArjsF9C0aNnquZYY4uW/Vu0miy5YoWvbV345HauVvcAUnpRuhMMcqTcGOY2+w==
   
   escape-string-regexp@^4.0.0:
     version "4.0.0"
@@ -3895,7 +3904,7 @@ Lockfile:
       strip-ansi "^4.0.0"
       through "^2.3.6"
   
-  invariant@^2.2.2, invariant@^2.2.4:
+  invariant@2.2.4, invariant@^2.2.2, invariant@^2.2.4:
     version "2.2.4"
     resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
     integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
@@ -5488,6 +5497,14 @@ Lockfile:
       normalize-css-color "^1.0.2"
       prop-types "^15.6.0"
       react-timer-mixin "^0.13.4"
+  
+  react-native-webview@11.2.3:
+    version "11.2.3"
+    resolved "https://registry.yarnpkg.com/react-native-webview/-/react-native-webview-11.2.3.tgz#1b82685ab60645d4161f2e25e98286493cdffa5d"
+    integrity sha512-r/K+Lf/O5aij72gRndMX2qsyQ/WLtDPiO75SS57y6JjqSKxedGASVL9Jwl1TM7fCXqUq8dgiwik/LuBHbJXAEg==
+    dependencies:
+      escape-string-regexp "2.0.0"
+      invariant "2.2.4"
   
   "react-native@https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz":
     version "0.63.2"
