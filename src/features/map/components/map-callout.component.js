@@ -6,14 +6,13 @@ import WebView from "react-native-webview";
 
 const Item = styled.View`
   padding: 10px;
-  max-width: 120px;
   align-items: center;
+  padding: 0px;
 `;
 
 const CompactImage = styled.View`
   border-radius: 10px;
   width: 100px;
-  height: 100px;
 `;
 
 const CompactWebView = styled(WebView)`
@@ -30,10 +29,14 @@ export const MapCallout = ({ restaurant }) => {
     <Item>
       <View>
         <Image source={{ uri: restaurant.photos[0] }} />
+        <Text
+          variant="caption"
+          numberOfLines={3}
+          style={{ textAlign: "center" }}
+        >
+          {restaurant.name}
+        </Text>
       </View>
-      <Text center variant="caption" numberOfLines={3}>
-        {restaurant.name}
-      </Text>
     </Item>
   );
 };
